@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial',sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header {
+    background-color: rgb(2, 8, 0);
+    color: rgb(223, 93, 93);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.logo tagline{
+    font-size: 0.9rem;
+    opacity: 0.8;
+    
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: rgb(240, 236, 236);
+    text-decoration: none;
+    padding: 2.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover{
+    background-color: rgb(14, 14, 65);
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('Dough-Delight/images/Cake Image.png') center/cover;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(204, 119, 8);
+}
+.hero-contant h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    /* font-weight: 500; */
+    letter-spacing: 2px;
+}
+.hero-contant h2 span{
+    font-size: 2rem;
+}
+.hero-contant p{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.btn {
+    padding: 1em 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.btn-primary {
+    background-color: red;
+    color: antiquewhite;
+}
+.btn-primary:hover{
+    background-color: brown;
+    transform: translatey(-2px);
+}
+.btn-secondary {
+    background-color: transparent;
+    color: antiquewhite;
+    border: 2px solid white;
+}
+.btn-secondary:hover{
+    background-color: white;
+    color: #2c3e50;
+}
